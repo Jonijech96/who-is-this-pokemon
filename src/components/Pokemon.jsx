@@ -24,7 +24,7 @@ const Pokemon = () => {
   const showPokemon = ()=>setIsShow(!isShow)
   return (
     <div className='card-pokemon'>
-      <h1>{isShow ? `Quien es este Pokemon?`: `Es ${pokemon.name}!`}</h1>
+      <h1>{isShow ? `Quien es ese Pokemon?`: `Es ${pokemon.name}!`}</h1>
       <img className={isShow? "showPokemon": ""} src={pokemon.sprites?.other.dream_world.front_default} width="200px" alt="" />
       <p>weigth: {isShow? `?` : `${pokemon.weight/10} kg`}</p>
       <p>heigth: {isShow? `?` : `${pokemon.height*10} cm`} </p>
