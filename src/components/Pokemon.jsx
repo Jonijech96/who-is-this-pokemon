@@ -29,7 +29,7 @@ const Pokemon = () => {
       <p>weigth: {isShow? `?` : `${pokemon.weight/10} kg`}</p>
       <p>heigth: {isShow? `?` : `${pokemon.height*10} cm`} </p>
       <p>type: {isShow? `?` :pokemon.types?.map((element,index) => (<span key={index}>{element.type.name} </span> ))}</p>
-      <button onClick={showPokemon}>{isShow? "Mostrar": "Ocultar"}</button>
+      <button onClick={showPokemon}>{isShow? "Show": "Hide"}</button>
       <button onClick={changePokemon}>Change</button>
     </div>
   )
