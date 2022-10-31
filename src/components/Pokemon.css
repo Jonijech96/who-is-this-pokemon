@@ -2,15 +2,61 @@
   /* border: 1px solid red; */
   padding: 20px;
   width: 500px;
+  height: 500px;
   border-radius: 50%;
   /* box-shadow: 0px 0px 1px 1px red; */
   background: rgb(223,223,223);
   background: radial-gradient(circle, rgba(223,223,223,1) 36%, rgba(17,128,237,1) 100%);
-  filter: drop-shadow(2px 4px 6px black);
+  /* filter: drop-shadow(2px 4px 6px black); */
+  
+  
 
 }
-
+.img-pokemon{
+  transition: all .7s ease-in-out;
+}
+.img-pokemon:hover{
+  scale: 1.6;
+}
 
 .showPokemon{
   filter: brightness(0%);
+
+}
+
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  overflow: hidden;
+
+}
+
+.fondo-pokemon{
+  
+  animation: logo-spin infinite 20s linear, logo-scale infinite 5s linear;
+}
+
+@keyframes logo-spin {
+  from {
+    rotate:0deg;
+  }
+  to {
+    rotate:360deg;
+  }
+}
+
+
+@keyframes logo-scale {
+  0% {
+    scale:.9;
+  }
+  50% {
+    scale:1;
+  }
+100% {
+    scale:.9;
+  }
 }
