@@ -13,6 +13,8 @@
 
 }
 .img-pokemon{
+  filter: brightness(1);
+
   transition: all .7s ease-in-out;
 }
 .img-pokemon:hover{
@@ -20,6 +22,8 @@
 }
 
 .showPokemon{
+  
+
   filter: brightness(0%);
 
 }
